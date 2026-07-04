@@ -1,14 +1,30 @@
-import { useState } from 'react'
+
 import './App.css'
+import Counter from './compoments/Counter'
+import DrinkList from './compoments/DrinkList'
+import Greet from './compoments/Greet'
+import InputValueState from './compoments/InputValueState'
+import Player from './compoments/Player'
 
 function App() {
-  const [count, setCount] = useState(0)
 
+
+const playerobj  = {
+  name : "신유빈",
+  age : 22
+}
+
+const clickHandler = () => {
+  alert("버튼이 클릭되었습니다.");
+}
   return (
     <>
     <section className='app'>
-    <h2>ts 기반  프로젝트</h2>
-
+    {/* <Greet name="타입스크립트"/> */}
+    {/* <Player player={playerobj} clickHandler={clickHandler}/> */}
+    {/* {<Counter/>} */}
+    {/* {<InputValueState/>} */}
+    {<DrinkList/>}
     </section>
     </>
   )
